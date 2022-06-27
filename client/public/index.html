@@ -1,0 +1,54 @@
+cd <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./mystyle.css">
+    <script src="./java.js" type="module" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body class="container">
+    <div class="row">
+    <h1>UCLL Promomateriaal Webshop</h1>
+    <section id="producten" class="col-8">
+      <div id="productencss">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Naam</th>
+            <th>Kostprijs (€)</th>
+            <th>Toevoegen</th>
+          </tr>
+        </thead>
+        <tbody id="bodyProductTable">
+
+        </tbody>
+      </table>
+      </div>
+    </section>
+    <section class="col-4">
+      <div id="winkelwagen">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Naam</th>
+            </tr>
+          </thead>
+          <tbody id="bodyShoppingCart">
+
+          </tbody>
+        </table>
+        <div class="row"><p class="col">Totaal prijs</p><p class="col text-center" id="totalPriceInput">0</p></div>
+        <div class="row"><p class="col">Totaal prijs met korting</p><p class="col text-center" id="totalPriceReduction">0</p></div>
+        <div class="pt-5 row"><p class="col">Gebruikersnaam</p><input id="userName" class="col" type="text"></div>
+        <div class="text-center mt-3"><button id="bestelButton"><h4>Bestellen</h4></button></div>
+        <p id="orderID" class="text-center"></p>
+      </div>
+    </section>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
